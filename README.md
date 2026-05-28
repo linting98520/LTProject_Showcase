@@ -23,8 +23,7 @@
 [Bridge 階段 — ECS 通知 GameObject]
    GameObjectLinkBrokenDetectionSystem  偵測帶 GameObjectLink 的 entity 死亡 -> 發事件
    LinkBrokenDispatcher (MonoBehaviour)  依 LinkType 分派給對應 handler
-```
-
+   
 設計關鍵在於**把「移動意圖」與「移動提交」分離**：移動系統只宣告想去的位置，
 真正的位移由唯一的碰撞系統在驗證安全後執行。這讓所有移動規則共用同一套碰撞邏輯，
 且天生免疫高速子彈的 tunneling。
