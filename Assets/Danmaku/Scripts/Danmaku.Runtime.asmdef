@@ -1,0 +1,15 @@
+{
+    "name": "Danmaku.Runtime",
+    "rootNamespace": "Danmaku",
+    "references": [
+        "Unity.Entities",
+        "Unity.Entities.Hybrid",
+        "Unity.Physics",
+        "Unity.Transforms",
+        "Unity.Mathematics",
+        "Unity.Collections",
+        "Unity.Burst"
+    ],
+    "autoReferenced": true,
+    "allowUnsafeCode": false
+}
